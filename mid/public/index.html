@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>簡易網誌系統</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #blog-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .post {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+
+    button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="blog-container">
+  <h1>我的網誌</h1>
+
+  <!-- 表單用於創建新文章 -->
+  <form id="post-form">
+    <label for="title">標題:</label>
+    <input type="text" id="title" name="title" required>
+    <label for="content">內容:</label>
+    <textarea id="content" name="content" required></textarea>
+    <button type="submit">創建文章</button>
+  </form>
+
+  <div id="posts"></div>
+
+  <!-- 引入 main.js -->
+  <script src="main.js"></script>
+</div>
+
+</body>
+</html>
